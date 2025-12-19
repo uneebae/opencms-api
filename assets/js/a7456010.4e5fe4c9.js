@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkopen_cms_paysyslabs=globalThis.webpackChunkopen_cms_paysyslabs||[]).push([[235],{8552(s){s.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);

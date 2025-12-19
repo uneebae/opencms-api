@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-backOffice" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Open CMS – Back Office | Open CMS</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://uneebae.github.io/opencms-api/img/OpenCMS.png"><meta data-rh="true" name="twitter:image" content="https://uneebae.github.io/opencms-api/img/OpenCMS.png"><meta data-rh="true" property="og:url" content="https://uneebae.github.io/opencms-api/backOffice"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Open CMS – Back Office | Open CMS"><meta data-rh="true" name="description" content="1. Open Card Management System – Overview"><meta data-rh="true" property="og:description" content="1. Open Card Management System – Overview"><link data-rh="true" rel="icon" href="/opencms-api/img/favicon.png"><link data-rh="true" rel="canonical" href="https://uneebae.github.io/opencms-api/backOffice"><link data-rh="true" rel="alternate" href="https://uneebae.github.io/opencms-api/backOffice" hreflang="en"><link data-rh="true" rel="alternate" href="https://uneebae.github.io/opencms-api/backOffice" hreflang="x-default"><link rel="stylesheet" href="/opencms-api/assets/css/styles.e00f4fce.css">
+<script src="/opencms-api/assets/js/runtime~main.6fc070d6.js" defer="defer"></script>
+<script src="/opencms-api/assets/js/main.c9e18f84.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script>
+<script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script><div id="__docusaurus"><link rel="preload" as="image" href="/opencms-api/img/PaysysLogo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/opencms-api/"><div class="navbar__logo"><img src="/opencms-api/img/PaysysLogo.png" alt="Paysys Labs Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/opencms-api/img/PaysysLogo.png" alt="Paysys Labs Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/opencms-api/">Overview</a><a class="navbar__item navbar__link" href="/opencms-api/api-specifications">API Specifications</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/opencms-api/backOffice">Back Office</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/uneebae/opencms-api" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Open CMS – Back Office</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-open-card-management-system--overview">1. Open Card Management System – Overview<a href="#1-open-card-management-system--overview" class="hash-link" aria-label="Direct link to 1. Open Card Management System – Overview" title="Direct link to 1. Open Card Management System – Overview" translate="no">​</a></h2>
+<p>The Open Card Management System (OpenCMS) Back Office is a comprehensive, centralized administrative platform that enables the seamless management of the entire card lifecycle. It serves as a pivotal tool for operational controls, customer servicing, product configuration, fee management, transaction monitoring, and audit tracking.</p>
+<p>With a robust role-based access control system, OpenCMS ensures that only authorized personnel such as Makers, Checkers, Administrators, and Support Teams can access sensitive operations. All user actions are fully auditable, providing complete transparency and traceability.</p>
+<p>The system integrates all functions into a unified back-office interface, providing operational teams with real-time data and streamlined workflows to maintain efficiency and compliance.</p>
+<p><img decoding="async" loading="lazy" alt="Back Office Overview" src="/opencms-api/assets/images/BO1-377b95a517287afb7475aa5f5be4bb4c.jpg" width="1179" height="495" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-system-access--user-management">2. System Access &amp; User Management<a href="#2-system-access--user-management" class="hash-link" aria-label="Direct link to 2. System Access &amp; User Management" title="Direct link to 2. System Access &amp; User Management" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="21-login--navigation">2.1 Login &amp; Navigation<a href="#21-login--navigation" class="hash-link" aria-label="Direct link to 2.1 Login &amp; Navigation" title="Direct link to 2.1 Login &amp; Navigation" translate="no">​</a></h3>
+<p>Upon logging into the system, users are presented with a unified, easy-to-navigate dashboard. The dashboard provides direct access to essential functional modules such as:</p>
+<ul>
+<li class=""><strong>User Management</strong>: For creating and managing internal users.</li>
+<li class=""><strong>Batch Management</strong>: For uploading and processing bulk files.</li>
+<li class=""><strong>Customer Management</strong>: To handle customer accounts and card details.</li>
+<li class=""><strong>Product Management</strong>: To configure and manage card products.</li>
+<li class=""><strong>Fee Management</strong>: For defining and applying card and transaction fees.</li>
+<li class=""><strong>Audit Logging</strong>: To track and monitor system-wide actions.</li>
+</ul>
+<p>The dashboard is designed to provide quick visibility into system operations, making it easier for users to manage day-to-day tasks efficiently.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="22-user--role-management">2.2 User &amp; Role Management<a href="#22-user--role-management" class="hash-link" aria-label="Direct link to 2.2 User &amp; Role Management" title="Direct link to 2.2 User &amp; Role Management" translate="no">​</a></h3>
+<p>The User &amp; Role Management module allows administrators to create and manage internal users, define roles, and assign permissions to control access to different areas of the system.</p>
+<p>Key capabilities include:</p>
+<ul>
+<li class=""><strong>Role Creation</strong>: Define roles based on operational requirements (e.g., Maker, Checker, Admin, Support).</li>
+<li class=""><strong>Module-Level Permissions</strong>: Control access to specific system modules, ensuring users can only access relevant functions.</li>
+<li class=""><strong>User Activation/Deactivation</strong>: Easily activate or deactivate users as needed.</li>
+<li class=""><strong>Audit Trails</strong>: Track and log all user actions, providing full accountability.</li>
+</ul>
+<p>This module is essential for maintaining operational security, ensuring that only authorized personnel can access sensitive features.</p>
+<p><img decoding="async" loading="lazy" alt="User Management" src="/opencms-api/assets/images/BO2-6ea5aea84b1258449c189b4df2a2cfc3.jpg" width="1179" height="490" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-dashboard--analytics">3. Dashboard &amp; Analytics<a href="#3-dashboard--analytics" class="hash-link" aria-label="Direct link to 3. Dashboard &amp; Analytics" title="Direct link to 3. Dashboard &amp; Analytics" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="31-dashboard-overview">3.1 Dashboard Overview<a href="#31-dashboard-overview" class="hash-link" aria-label="Direct link to 3.1 Dashboard Overview" title="Direct link to 3.1 Dashboard Overview" translate="no">​</a></h3>
+<p>The Back Office Dashboard provides a bird&#x27;s-eye view of all system activities. It consolidates data from various modules into an easy-to-read interface, offering insights into ongoing operations.</p>
+<p>It is the primary landing page for operational users and allows them to monitor performance and make data-driven decisions based on real-time metrics.</p>
+<p>The dashboard includes:</p>
+<ul>
+<li class=""><strong>Operational Metrics</strong>: Visualized statistics of card-related activities, such as issuance, expiration, and block statuses.</li>
+<li class=""><strong>Navigation Shortcuts</strong>: Quick access links to frequently used modules like Batch Management, Customer Management, and Transaction Monitoring.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="CMS Dashboard Overview" src="/opencms-api/assets/images/BO3-785b0c9b23123d27929b178653e213d9.jpg" width="1179" height="490" class="img_ev3q"></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="32-card-analytics">3.2 Card Analytics<a href="#32-card-analytics" class="hash-link" aria-label="Direct link to 3.2 Card Analytics" title="Direct link to 3.2 Card Analytics" translate="no">​</a></h3>
+<p>The Card Analytics module provides a comprehensive view of card portfolio health, with real-time data on the status and activity of issued cards.</p>
+<p>Metrics displayed include:</p>
+<ul>
+<li class=""><strong>Total Cards Issued</strong>: Overview of the total number of cards issued.</li>
+<li class=""><strong>Active Cards</strong>: Cards that are currently active and in use.</li>
+<li class=""><strong>Blocked Cards</strong>: Cards that have been blocked for security or operational reasons.</li>
+<li class=""><strong>Fresh Cards</strong>: Newly issued cards not yet activated.</li>
+<li class=""><strong>Expiring Cards</strong>: Cards that are about to expire within 30, 60, or 90 days.</li>
+</ul>
+<p>This helps teams monitor card activity, plan for renewals, and take necessary actions to maintain portfolio health.</p>
+<p><img decoding="async" loading="lazy" alt="Card Analytics" src="/opencms-api/assets/images/BO4-17283e7925544a77beaeaca1ccce98e4.jpg" width="1179" height="490" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-batch-management">4. Batch Management<a href="#4-batch-management" class="hash-link" aria-label="Direct link to 4. Batch Management" title="Direct link to 4. Batch Management" translate="no">​</a></h2>
+<p>Batch Management is a critical feature for high-volume operations, allowing users to process multiple records in bulk. This significantly reduces manual effort and increases operational efficiency.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="41-batch-file-upload">4.1 Batch File Upload<a href="#41-batch-file-upload" class="hash-link" aria-label="Direct link to 4.1 Batch File Upload" title="Direct link to 4.1 Batch File Upload" translate="no">​</a></h3>
+<p>This module allows users to upload batch files for bulk card operations such as:</p>
+<ul>
+<li class=""><strong>Customer Onboarding</strong>: Adding new customers to the system.</li>
+<li class=""><strong>Card Creation</strong>: Mass creation of cards based on bulk data.</li>
+<li class=""><strong>Card Updates</strong>: Updating card details, such as limits or statuses.</li>
+<li class=""><strong>Status Changes</strong>: Processing requests to change the status of multiple cards (e.g., blocking or unblocking).</li>
+</ul>
+<p>The system automatically validates the file format and structure before processing the records to ensure data consistency.</p>
+<p><img decoding="async" loading="lazy" alt="Batch File Upload" src="/opencms-api/assets/images/BO5-bf97a4161fe4d5bf52edbeb6cc7fcc80.jpg" width="1179" height="483" class="img_ev3q"></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="42-uploaded-batches-batch-overview">4.2 Uploaded Batches (Batch Overview)<a href="#42-uploaded-batches-batch-overview" class="hash-link" aria-label="Direct link to 4.2 Uploaded Batches (Batch Overview)" title="Direct link to 4.2 Uploaded Batches (Batch Overview)" translate="no">​</a></h3>
+<p>This screen displays a list of all uploaded batches along with their processing status. Key details include:</p>
+<ul>
+<li class=""><strong>Batch ID</strong>: A unique identifier for each batch.</li>
+<li class=""><strong>File Name</strong>: Name of the uploaded batch file.</li>
+<li class=""><strong>Upload Date</strong>: Timestamp when the batch was uploaded.</li>
+<li class=""><strong>Total Records</strong>: Total number of records in the batch.</li>
+<li class=""><strong>Batch Status</strong>: Current status of the batch (e.g., Processing, Completed, Failed).</li>
+<li class=""><strong>Action Options</strong>: Options for reviewing, reprocessing, or correcting batch issues.</li>
+</ul>
+<p>This screen offers complete visibility into the status of all batch processes.</p>
+<p><img decoding="async" loading="lazy" alt="Uploaded Batches" src="/opencms-api/assets/images/BO6-e7b0287599caabc05ffc5f73c718f5be.jpg" width="1179" height="489" class="img_ev3q"></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="43-batch-feedback">4.3 Batch Feedback<a href="#43-batch-feedback" class="hash-link" aria-label="Direct link to 4.3 Batch Feedback" title="Direct link to 4.3 Batch Feedback" translate="no">​</a></h3>
+<p>The Batch Feedback screen allows users to view detailed processing results for each batch. This includes:</p>
+<ul>
+<li class=""><strong>Successful and Failed Records</strong>: Count of successfully processed records and any records that failed.</li>
+<li class=""><strong>Batch Status</strong>: Current processing status (e.g., Validated, PAN Generated, Embossing Generated).</li>
+<li class=""><strong>Metadata</strong>: Information such as the upload date and total records processed.</li>
+</ul>
+<p>Users can filter through batch records to focus on specific entries for review.</p>
+<p><img decoding="async" loading="lazy" alt="Batch Feedback" src="/opencms-api/assets/images/BO7-eac4a13dbad916d7b998106aec56d079.jpg" width="1179" height="483" class="img_ev3q"></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="44-failed-records-maker">4.4 Failed Records (Maker)<a href="#44-failed-records-maker" class="hash-link" aria-label="Direct link to 4.4 Failed Records (Maker)" title="Direct link to 4.4 Failed Records (Maker)" translate="no">​</a></h3>
+<p>This module helps Makers efficiently handle records that failed during batch processing. It provides:</p>
+<ul>
+<li class=""><strong>Error Details</strong>: Specific reasons for failure (e.g., missing information or incorrect formatting).</li>
+<li class=""><strong>Record Correction</strong>: Allows Makers to edit and correct failed records directly in the system.</li>
+<li class=""><strong>Resubmission</strong>: After correction, only the failed records are resubmitted, saving time and resources.</li>
+</ul>
+<p>This process ensures that errors are resolved quickly without needing to re-upload the entire batch.</p>
+<p><img decoding="async" loading="lazy" alt="Failed Records Maker" src="/opencms-api/assets/images/BO12-faccde67db896d970718bd1e9dd17e53.jpg" width="773" height="360" class="img_ev3q"></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="45-card-information-report">4.5 Card Information Report<a href="#45-card-information-report" class="hash-link" aria-label="Direct link to 4.5 Card Information Report" title="Direct link to 4.5 Card Information Report" translate="no">​</a></h3>
+<p>The Card Information Report provides a consolidated view of all card records stored in the system. It can be filtered by:</p>
+<ul>
+<li class=""><strong>Batch Number</strong>: Filter records by specific batch IDs.</li>
+<li class=""><strong>Date/Time Range</strong>: Allows users to search records within a specific time period.</li>
+<li class=""><strong>Card Status</strong>: Filter by the current status of the card (e.g., Active, Blocked, Expired).</li>
+</ul>
+<p>This report is primarily used for reconciliation, audits, and customer service inquiries.</p>
+<p><img decoding="async" loading="lazy" alt="Card Information Report" src="/opencms-api/assets/images/BO11-6624ec07cf0dedd5ef7f021d26885757.jpg" width="777" height="317" class="img_ev3q"></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="46-card-renewal">4.6 Card Renewal<a href="#46-card-renewal" class="hash-link" aria-label="Direct link to 4.6 Card Renewal" title="Direct link to 4.6 Card Renewal" translate="no">​</a></h3>
+<p>The Card Renewal module helps manage cards that are expiring or already expired. It allows users to:</p>
+<ul>
+<li class=""><strong>Search by Card Number</strong>: Quickly find cards based on card number or customer details.</li>
+<li class=""><strong>View Expiry Dates</strong>: See which cards are expiring soon.</li>
+<li class=""><strong>Initiate Renewal Requests</strong>: Start the renewal process for expiring cards.</li>
+<li class=""><strong>Track Status</strong>: Monitor the renewal status to ensure uninterrupted service for cardholders.</li>
+</ul>
+<p>This module is crucial for ensuring customers continue to have active, functional cards.</p>
+<p><img decoding="async" loading="lazy" alt="Card Renewal" src="/opencms-api/assets/images/BO13-9de5d03bf142a212c37155d956b0b290.jpg" width="773" height="293" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-customer-management">5. Customer Management<a href="#5-customer-management" class="hash-link" aria-label="Direct link to 5. Customer Management" title="Direct link to 5. Customer Management" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="51-customer--card-details">5.1 Customer &amp; Card Details<a href="#51-customer--card-details" class="hash-link" aria-label="Direct link to 5.1 Customer &amp; Card Details" title="Direct link to 5.1 Customer &amp; Card Details" translate="no">​</a></h3>
+<p>This module provides detailed information on customers and their associated cards. Information includes:</p>
+<ul>
+<li class=""><strong>Customer Details</strong>: Personal information, account details, and card-related data.</li>
+<li class=""><strong>Card Limits</strong>: Information on the current limits of each card.</li>
+<li class=""><strong>Card Block Rules</strong>: Block criteria based on various factors like transaction type or merchant category.</li>
+</ul>
+<p>Changes to this data are controlled via role-based permissions and fully logged for auditing purposes.</p>
+<p><img decoding="async" loading="lazy" alt="Customer Card Details" src="/opencms-api/assets/images/BO8-4211cdef70f89d01dd13e93f8333c222.jpg" width="1179" height="486" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-product-management">6. Product Management<a href="#6-product-management" class="hash-link" aria-label="Direct link to 6. Product Management" title="Direct link to 6. Product Management" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="61-transaction-setup">6.1 Transaction Setup<a href="#61-transaction-setup" class="hash-link" aria-label="Direct link to 6.1 Transaction Setup" title="Direct link to 6.1 Transaction Setup" translate="no">​</a></h3>
+<p>This screen defines the available transaction types for card products, allowing administrators to enable or disable specific transaction features for different card types.</p>
+<p>Examples of transaction types:</p>
+<ul>
+<li class=""><strong>Balance Inquiry</strong></li>
+<li class=""><strong>Cash Withdrawal</strong></li>
+<li class=""><strong>POS Purchase</strong></li>
+<li class=""><strong>Online Purchase</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Transaction Setup" src="/opencms-api/assets/images/BO9-e90309658332254195180fa54df76665.jpg" width="777" height="352" class="img_ev3q"></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="62-product-configuration">6.2 Product Configuration<a href="#62-product-configuration" class="hash-link" aria-label="Direct link to 6.2 Product Configuration" title="Direct link to 6.2 Product Configuration" translate="no">​</a></h3>
+<p>The Product Configuration module is used to create and manage card products. Parameters for configuration include:</p>
+<ul>
+<li class=""><strong>Product Name and Description</strong></li>
+<li class=""><strong>Card Type</strong>: Physical or Virtual</li>
+<li class=""><strong>Scheme</strong>: PayPak, Visa, Mastercard, etc.</li>
+<li class=""><strong>Currency</strong></li>
+<li class=""><strong>Card Validity Period</strong></li>
+<li class=""><strong>Replacement and Renewal Policies</strong></li>
+<li class=""><strong>Embossing Formats</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Create Product Configuration" src="/opencms-api/assets/images/BO10-bf3c063f1510772a541041ab5f43e90e.jpg" width="777" height="361" class="img_ev3q"></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="63-channel-management">6.3 Channel Management<a href="#63-channel-management" class="hash-link" aria-label="Direct link to 6.3 Channel Management" title="Direct link to 6.3 Channel Management" translate="no">​</a></h3>
+<p>Channel Management defines which transaction channels are available for use with each card product. This includes:</p>
+<ul>
+<li class=""><strong>ATM Channels</strong>: Both On-Us and Off-Us.</li>
+<li class=""><strong>POS Channels</strong>: For card-based point-of-sale transactions.</li>
+<li class=""><strong>Online Transactions</strong>: Both local and international online purchases.</li>
+</ul>
+<p>Channels can be marked as local or international, and activated or deactivated as needed.</p>
+<p><img decoding="async" loading="lazy" alt="Channel Management" src="/opencms-api/assets/images/BO7-eac4a13dbad916d7b998106aec56d079.jpg" width="1179" height="483" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="7-fee-management">7. Fee Management<a href="#7-fee-management" class="hash-link" aria-label="Direct link to 7. Fee Management" title="Direct link to 7. Fee Management" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="71-card-event-fee">7.1 Card Event Fee<a href="#71-card-event-fee" class="hash-link" aria-label="Direct link to 7.1 Card Event Fee" title="Direct link to 7.1 Card Event Fee" translate="no">​</a></h3>
+<p>This module allows administrators to define fees associated with specific card-related events. Examples include:</p>
+<ul>
+<li class=""><strong>Card Issuance Fee</strong></li>
+<li class=""><strong>Card Renewal Fee</strong></li>
+<li class=""><strong>Card Replacement Fee</strong></li>
+</ul>
+<p>These fees can be set based on the card type, event type, and other conditions.</p>
+<p><img decoding="async" loading="lazy" alt="Create Card Event Fee" src="/opencms-api/assets/images/BO6-e7b0287599caabc05ffc5f73c718f5be.jpg" width="1179" height="489" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="8-audit-logging">8. Audit Logging<a href="#8-audit-logging" class="hash-link" aria-label="Direct link to 8. Audit Logging" title="Direct link to 8. Audit Logging" translate="no">​</a></h2>
+<p>The Audit Logging module is a critical feature for maintaining compliance and security. It logs all system actions, including:</p>
+<ul>
+<li class=""><strong>Timestamp</strong>: When the action was performed.</li>
+<li class=""><strong>User</strong>: Who performed the action.</li>
+<li class=""><strong>Module Name</strong>: The module in which the action occurred.</li>
+<li class=""><strong>Action Performed</strong>: Description of what was done.</li>
+<li class=""><strong>Old and New Values</strong>: Any changes made to the system.</li>
+<li class=""><strong>IP Address</strong>: Where the action originated.</li>
+</ul>
+<p>This module helps ensure that the system remains fully traceable for audits and regulatory reviews.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="9-system-summary">9. System Summary<a href="#9-system-summary" class="hash-link" aria-label="Direct link to 9. System Summary" title="Direct link to 9. System Summary" translate="no">​</a></h2>
+<p>The OpenCMS Back Office provides a secure, scalable, and fully auditable administrative interface that centralizes:</p>
+<ul>
+<li class="">Card lifecycle management</li>
+<li class="">Batch processing</li>
+<li class="">Customer servicing</li>
+<li class="">Product and fee configuration</li>
+<li class="">Transaction monitoring</li>
+<li class="">Compliance and audit tracking</li>
+</ul>
+<p>Designed for enterprise-level banking needs, it ensures efficient, transparent, and compliant operations.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/uneebae/opencms-api/tree/main/docs/backOffice.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-open-card-management-system--overview" class="table-of-contents__link toc-highlight">1. Open Card Management System – Overview</a></li><li><a href="#2-system-access--user-management" class="table-of-contents__link toc-highlight">2. System Access &amp; User Management</a><ul><li><a href="#21-login--navigation" class="table-of-contents__link toc-highlight">2.1 Login &amp; Navigation</a></li><li><a href="#22-user--role-management" class="table-of-contents__link toc-highlight">2.2 User &amp; Role Management</a></li></ul></li><li><a href="#3-dashboard--analytics" class="table-of-contents__link toc-highlight">3. Dashboard &amp; Analytics</a><ul><li><a href="#31-dashboard-overview" class="table-of-contents__link toc-highlight">3.1 Dashboard Overview</a></li><li><a href="#32-card-analytics" class="table-of-contents__link toc-highlight">3.2 Card Analytics</a></li></ul></li><li><a href="#4-batch-management" class="table-of-contents__link toc-highlight">4. Batch Management</a><ul><li><a href="#41-batch-file-upload" class="table-of-contents__link toc-highlight">4.1 Batch File Upload</a></li><li><a href="#42-uploaded-batches-batch-overview" class="table-of-contents__link toc-highlight">4.2 Uploaded Batches (Batch Overview)</a></li><li><a href="#43-batch-feedback" class="table-of-contents__link toc-highlight">4.3 Batch Feedback</a></li><li><a href="#44-failed-records-maker" class="table-of-contents__link toc-highlight">4.4 Failed Records (Maker)</a></li><li><a href="#45-card-information-report" class="table-of-contents__link toc-highlight">4.5 Card Information Report</a></li><li><a href="#46-card-renewal" class="table-of-contents__link toc-highlight">4.6 Card Renewal</a></li></ul></li><li><a href="#5-customer-management" class="table-of-contents__link toc-highlight">5. Customer Management</a><ul><li><a href="#51-customer--card-details" class="table-of-contents__link toc-highlight">5.1 Customer &amp; Card Details</a></li></ul></li><li><a href="#6-product-management" class="table-of-contents__link toc-highlight">6. Product Management</a><ul><li><a href="#61-transaction-setup" class="table-of-contents__link toc-highlight">6.1 Transaction Setup</a></li><li><a href="#62-product-configuration" class="table-of-contents__link toc-highlight">6.2 Product Configuration</a></li><li><a href="#63-channel-management" class="table-of-contents__link toc-highlight">6.3 Channel Management</a></li></ul></li><li><a href="#7-fee-management" class="table-of-contents__link toc-highlight">7. Fee Management</a><ul><li><a href="#71-card-event-fee" class="table-of-contents__link toc-highlight">7.1 Card Event Fee</a></li></ul></li><li><a href="#8-audit-logging" class="table-of-contents__link toc-highlight">8. Audit Logging</a></li><li><a href="#9-system-summary" class="table-of-contents__link toc-highlight">9. System Summary</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/opencms-api/introduction">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/opencms-api/api-specifications">API Reference</a></li><li class="footer__item"><a class="footer__link-item" href="/opencms-api/developerWorkflow">Developer Workflow</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Resources</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/opencms-api/backOffice">Back Office</a></li><li class="footer__item"><a class="footer__link-item" href="/opencms-api/dataTypeRef">Data Types</a></li><li class="footer__item"><a class="footer__link-item" href="/opencms-api/response">Response Codes</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Legal</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://paysyslabs.com/privacy" target="_blank" rel="noopener noreferrer" class="footer__link-item">Privacy Policy<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://paysyslabs.com/terms" target="_blank" rel="noopener noreferrer" class="footer__link-item">Terms of Service<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Paysys Labs. All rights reserved.</div></div></div></footer></div>
+</body>
+</html>

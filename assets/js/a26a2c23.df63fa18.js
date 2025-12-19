@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkopen_cms_paysyslabs=globalThis.webpackChunkopen_cms_paysyslabs||[]).push([[425],{3158(s){s.exports=JSON.parse('{"name":"@scalar/docusaurus","id":"openCMS"}')}}]);
