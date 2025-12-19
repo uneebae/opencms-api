@@ -7,11 +7,13 @@ const config = {
   tagline: 'Enterprise Card Management System',
   favicon: 'img/favicon.png',
 
-  // GitHub Pages config (repo: uneebae/opencms-api-specs)
+  // GitHub Pages config (repo: uneebae/opencms-api)
   url: 'https://uneebae.github.io',
-  baseUrl: '/opencms-api-specs/',
+  baseUrl: '/opencms-api/',  // Use your repo name as base URL
   organizationName: 'uneebae',
-  projectName: 'opencms-api-specs',
+  projectName: 'opencms-api',
+
+  trailingSlash: false, // This is important to avoid the trailing slash issue
 
   onBrokenLinks: 'throw',
 
@@ -33,10 +35,7 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-
-          // Docs as homepage
           routeBasePath: '/',
-
           editUrl: 'https://github.com/uneebae/opencms-api-specs/tree/UNEEB2/',
         },
         blog: false,
@@ -58,19 +57,14 @@ const config = {
         configuration: {
           // ✅ file is located in: static/openapi/OpenCMS-3.3.yml
           url: 'openapi/OpenCMS-3.3.yml',
-
           layout: 'modern',
           theme: 'default',
           darkMode: true,
           defaultOpenAllTags: false,
-
           hideModels: false,
           hideTestRequestButton: false,
           hideSearch: false,
           hideDarkModeToggle: false,
-
-          // Branding
-          hideLogo: false,
           branding: {
             title: 'Open CMS API',
             logo: '/img/PaysysLogo.png',
