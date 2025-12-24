@@ -1,6 +1,6 @@
 # Introduction
 
-![OpenCMS](/img/OpenCMS.png)
+![OpenCMS](/img/CMD.png)
 Welcome to the Open CMS API Portal, your complete reference for integrating with Paysys Labs’ Card Management System (OpenCMS). This portal enables banks, fintechs, and partner systems to perform full card lifecycle operations through a secure, RESTful interface — from card issuance and activation to limit management, blocking rules, and channel preferences. OpenCMS serves as a centralized platform to manage debit, prepaid, and credit cards in real-time, providing seamless connectivity with external systems such as core banking, middleware, and mobile channels.
 
  

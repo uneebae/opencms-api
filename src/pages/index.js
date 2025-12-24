@@ -4,20 +4,21 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 
 function HomepageHeader() {
   return (
     <header className={styles.futuristicHeader}>
       <div className={styles.backgroundAnimation}></div>
-
       <div className={styles.headerContent}>
-        <img
-          src="/opencms-api-specs/img/OpenCMS.png"
-          alt="Open CMS Logo"
-          className={styles.logo}
-        />
+<img
+  src={useBaseUrl('img/OpenCMS.png')}
+  alt="Open CMS"
+  className={styles.headerImage}
+/>
 
-        <Heading as="h1" className={styles.mainTitle}>
+        <Heading as="h1" className={styles.mainTitle}>          
           Open CMS
         </Heading>
 

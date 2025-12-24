@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-check 
 import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -7,11 +7,11 @@ const config = {
   tagline: 'Enterprise Card Management System',
   favicon: 'img/favicon.png',
 
-  // GitHub Pages config (repo: uneebae/opencms-api-specs)
-  url: 'https://uneebae.github.io',
-  baseUrl: '/opencms-api-specs/',
-  organizationName: 'uneebae',
-  projectName: 'opencms-api-specs',
+  // GitHub Pages config (repo: paysyslab/opencms-api)
+  url: 'https://paysyslab.github.io',  // Your GitHub Pages URL (for the paysyslab organization)
+  baseUrl: '/opencms-api/',  // Base URL is the repo name (opencms-api)
+  organizationName: 'paysyslab',  // Your GitHub organization name
+  projectName: 'opencms-api',  // Your GitHub repo name
 
   onBrokenLinks: 'throw',
 
@@ -35,9 +35,8 @@ const config = {
           sidebarPath: './sidebars.js',
 
           // Docs as homepage
-          routeBasePath: '/',
-
-          editUrl: 'https://github.com/uneebae/opencms-api-specs/tree/UNEEB2/',
+          routeBasePath: '/',  // Docs will be the homepage
+          editUrl: 'https://github.com/paysyslab/opencms-api/tree/main/',  // Link to GitHub repo
         },
         blog: false,
         theme: {
@@ -56,7 +55,7 @@ const config = {
         route: '/api-specifications',
         showNavLink: false,
         configuration: {
-          // ✅ file is located in: static/openapi/OpenCMS-3.3.yml
+
           url: 'openapi/OpenCMS-3.3.yml',
 
           layout: 'modern',
@@ -82,7 +81,8 @@ const config = {
   ],
 
   themeConfig: {
-    image: 'img/OpenCMS.png',
+    image: 'CMD.png',
+    //image: '/img/OpenCMS.png',
 
     colorMode: {
       defaultMode: 'dark',
@@ -93,14 +93,14 @@ const config = {
     navbar: {
       logo: {
         alt: 'Paysys Labs Logo',
-        src: '/img/PaysysLogo.png',
+        src: 'img/PaysysLogo.png',
         href: '/',
       },
       items: [
         { to: '/', label: 'Overview', position: 'left' },
         { to: '/api-specifications', label: 'API Specifications', position: 'left' },
         { type: 'doc', docId: 'backOffice', label: 'Back Office', position: 'left' },
-        { href: 'https://github.com/uneebae/opencms-api-specs', label: 'GitHub', position: 'right' },
+        { href: 'https://github.com/paysyslab/opencms-api', label: 'GitHub', position: 'right' },
       ],
     },
 

@@ -1,4 +1,4 @@
-# Open CMS – Back Office
+# Back Office
 
 ## 1. Open Card Management System – Overview
 
