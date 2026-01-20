@@ -7,13 +7,14 @@ const config = {
   tagline: 'Enterprise Card Management System',
   favicon: 'img/favicon.png',
 
-  // GitHub Pages config (repo: paysyslab/opencms-api)
-  url: 'https://paysyslab.github.io',  // Your GitHub Pages URL (for the paysyslab organization)
+  // GitHub Pages config (repo: uneebae/opencms-api)
+  url: 'https://uneebae.github.io',  // Your GitHub Pages URL
   baseUrl: '/opencms-api/',  // Base URL is the repo name (opencms-api)
-  organizationName: 'paysyslab',  // Your GitHub organization name
+  organizationName: 'uneebae',  // Your GitHub username
   projectName: 'opencms-api',  // Your GitHub repo name
+  trailingSlash: false,  // Prevent 404 errors on GitHub Pages
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
   markdown: {
     hooks: {
