@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/opencms-api/',  // Base URL is the repo name (opencms-api)
   organizationName: 'uneebae',  // Your GitHub username
   projectName: 'opencms-api',  // Your GitHub repo name
-  trailingSlash: false,  // Prevent 404 errors on GitHub Pages
+  trailingSlash: false,
 
   onBrokenLinks: 'warn',
 
